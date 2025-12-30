@@ -11,10 +11,10 @@ final class HomeController extends AbstractController
     #[Route('/', name: 'app_home')]
     public function index(): Response
     {
-        $message = 'Welcome to the Home Page!';
+        $message = "TEST POUR HOMME PAGE";
         return $this->render('home/index.html.twig', [
             'controller_name' => 'HomeController',
-            "message" => $message,
+            'message' => $message,
         ]);
     }
 }
